@@ -1,0 +1,313 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+}
+
+nav h1 {
+    color: #d60000;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #d60000;
+}
+
+/* Hero Section */
+#home {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h2 {
+    font-size: 48px;
+    color: #d60000;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    background-color: #dd60000;
+    color: #1a1a1a;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#home a:hover {
+    background-color: #fff;
+}
+/* Services Section */
+#services {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.service-card h3 {
+    color: #e60000;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e60000;
+    font-weight: bold;
+    font-size: 18px !important;
+}
+/* Shop Section */
+#shop {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#shop h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #1a1a1a;
+    margin: 15px 0 5px;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin: 15px 0;
+    background-color: #e60000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background-color: #1a1a1a;
+}
+/* Gallery Section */
+#gallery {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+#gallery h2 {
+    font-size: 36px;
+    color: #e60000;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+/* Booking Section */
+#booking {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#booking h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+#booking p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #e60000;
+}
+
+.booking-form button {
+    background-color: #e60000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #1a1a1a;
+}
+/* Contact Section */
+#contact {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #e60000;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.contact-item h3 {
+    color: #e60000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact-item a:hover {
+    color: #e60000;
+}
+
+/* Footer */
+footer {
+    background-color: #e60000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
